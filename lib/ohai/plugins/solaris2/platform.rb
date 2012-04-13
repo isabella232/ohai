@@ -51,9 +51,8 @@ File.open("/etc/release") do |file|
       platform "solaris2"
     when /^\s*(NexentaCore)\s.*$/
       platform "nexentacore"
-    when /^\s*(SmartOS)\s(\d{8}T\d{6}Z)\s.*$/
+    when /^\s*(SmartOS)\s.*$/
       platform "smartos"
-      platform_version $2
     end
   end
 end

@@ -66,7 +66,7 @@ describe Ohai::System, "Solaris plugin platform" do
     
     it "should set the platform_version" do
       @ohai._require_plugin("solaris2::platform")
-      @ohai[:platform_version].should == "20120130T201844Z"
+      @ohai[:platform_version].should == "5.11"
     end
 
   end
